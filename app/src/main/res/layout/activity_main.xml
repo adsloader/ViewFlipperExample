@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.adslo.viewflipperexample.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ViewFlipper
+            android:id="@+id/vFlipper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textSize="40sp"
+                android:gravity="center"
+                android:text="A"
+                android:background="#FF0000"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:textSize="40sp"
+                android:gravity="center"
+                android:text="B"
+                android:background="#FFFF00"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:textSize="40sp"
+                android:gravity="center"
+                android:text="C"
+                android:background="#0FF0FF"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </ViewFlipper>
+
+        <ImageButton
+            android:layout_gravity="left|center"
+            android:id="@+id/btnPrev"
+            android:src="@android:drawable/ic_media_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/btnNext"
+            android:layout_gravity="center|right"
+            android:src="@android:drawable/ic_media_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+</RelativeLayout>
